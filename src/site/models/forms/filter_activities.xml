@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label=""
+			hint="COM_TIMELOG_SEARCH_FILTER_SUBMIT"
+			description="COM_TIMELOG_SEARCH_TOOLS_DESC"
+		/>
+
+		<field name="activity_type" type="activitytype"
+				label=""
+			 onchange="this.form.submit();"
+		/>
+
+	</fields>
+	<fields name="list">
+		<field
+			name="limit"
+			type="limitbox"
+			label="COM_CONTENT_LIST_LIMIT"
+			description="COM_CONTENT_LIST_LIMIT_DESC"
+			class="inputbox input-mini pull-right"
+			default=""
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>
